@@ -1,0 +1,5 @@
+version: "3"
+services:
+  3cx:
+    image: farfui/3cx:15.5
+    privileged: true
