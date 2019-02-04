@@ -4,6 +4,7 @@ services:
         build:
             context: ./15.5/
         container_name: 3cx
+        dns: "1.1.1.1"
         ports:
             - "2195-2196:2195-2196"
             - "5001:5001"
