@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN echo "nameserver 1.1.1.1" > /etc/resolv.conf \
     && apt-get update -y \
     && apt-get install -y \
+        gnupg2 \
         systemd \
     && apt-key adv --fetch-keys http://downloads-global.3cx.com/downloads/3cxpbx/public.key \
     && echo "deb http://downloads-global.3cx.com/downloads/debian stretch main" | tee /etc/apt/sources.list.d/3cxpbx.list \
