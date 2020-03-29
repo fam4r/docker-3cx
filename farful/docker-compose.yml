@@ -1,5 +1,16 @@
-version: "3"
+version: "2"
 services:
   3cx:
+    container_name: 3cx
     image: farfui/3cx:15.5
+    mem_limit: 1g
+    ports:
+        - "2195-2196:2195-2196"
+        - "5001:5001"
+        - "5015:5015"
+        - "5060:5060"
+        - "5061:5061"
+        - "5090:5090"
+        - "4343:443"
+        - "9000-10999:9000-10999"
     privileged: true

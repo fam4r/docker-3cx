@@ -1,13 +1,15 @@
-version: "3"
+version: "2"
 services:
     3cx:
         build:
             context: ./15.5/
         container_name: 3cx
         dns: "1.1.1.1"
+        mem_limit: 1g
         ports:
             - "2195-2196:2195-2196"
             - "5001:5001"
+            - "5015:5015"
             - "5060:5060"
             - "5061:5061"
             - "5090:5090"
